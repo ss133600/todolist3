@@ -1,0 +1,152 @@
+:root {
+  --lightgreen: #00c78a;
+  --orange: #ff9c27;
+  --bg: #162719;
+  --primarytext: #f2e8cf;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #ffffff;
+}
+header {
+  padding: 20px 15px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  padding-left: 10px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #383838;
+  margin-bottom: 30px;
+}
+#task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#task-input {
+  /* width: 600px; */
+  flex: 1 1 0%;
+  background-color: black;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 10px;
+  background-color: whitesmoke;
+  font-size: 16px;
+}
+
+#task-input::placeholder {
+  color: gray;
+}
+
+#task-submit {
+  color: gray;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  /* transition: 0.4s; */
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+#task-submit:hover {
+  opacity: 0.8;
+}
+
+#task-submit:active {
+  opacity: 0.6;
+}
+.container {
+  /* background: var(--bg); */
+  flex: 0% 1 0%;
+  max-width: 450px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+main {
+  flex: 1 1 0%;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 15px;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+#tasks .task .content {
+  flex: 1 1 0%;
+}
+#tasks .task .content .text {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  width: 100%;
+  display: block;
+  /* transition: 0.4s; */
+}
+#tasks .task .content .text:not(:read-only) {
+  color: gray;
+}
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -0.5px;
+}
+
+.task .actions button {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 1px;
+  /* text-transform: uppercase;
+  transition: 0.4s; */
+}
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+.task .actions .Edit {
+  color: white;
+}
+.task .actions .Delete {
+  color: white;
+}
+.task .actions .Completed {
+  color: white;
+}
+
+.strike {
+  text-decoration: line-through;
+}
