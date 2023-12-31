@@ -111,7 +111,6 @@ main {
   font-size: 15px;
   width: 100%;
   display: block;
-  /* transition: 0.4s; */
 }
 #tasks .task .content .text:not(:read-only) {
   color: gray;
@@ -126,8 +125,6 @@ main {
   font-size: 15px;
   font-weight: 800;
   margin: 1px;
-  /* text-transform: uppercase;
-  transition: 0.4s; */
 }
 .task .actions button:hover {
   opacity: 0.8;
