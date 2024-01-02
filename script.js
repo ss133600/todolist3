@@ -69,6 +69,6 @@ window.addEventListener("load", () => {
       task_input.setAttribute("readonly", "readonly");
     });
 
-    input.value = "";
+    input.value = "zdbzfzdbz";
   });
 });
